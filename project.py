@@ -30,9 +30,9 @@ def open_img():
 
         # derive the paths to the YOLO weights and model configuration
 	# give path where you have stored yolov3.weights file and rename the file as yolov3
-        weightsPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.weights.weights"
+        weightsPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.weights"
 	# give path where you have stored yolov3.cfg file and rename the file as yolov3
-        configPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.cfg.cfg"
+        configPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.cfg"
 
         # load our YOLO object detector trained on COCO dataset (80 classes)
         print("[INFO] loading YOLO from disk...")
