@@ -19,6 +19,7 @@ def open_img():
                 
 
         # load the COCO class labels our YOLO model was trained on
+	# give path where you have stored coco.names file and rename the file as coco
         labelsPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\coco.names"
         LABELS = open(labelsPath).read().strip().split("\n")
 
@@ -28,8 +29,10 @@ def open_img():
                 dtype="uint8")
 
         # derive the paths to the YOLO weights and model configuration
-        weightsPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.weights"
-        configPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.cfg"
+	# give path where you have stored yolov3.weights file and rename the file as yolov3
+        weightsPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.weights.weights"
+	# give path where you have stored yolov3.cfg file and rename the file as yolov3
+        configPath = r"C:\Users\Hp\Desktop\yolo-object-detection\yolo-object-detection\yolo-coco\yolov3.cfg.cfg"
 
         # load our YOLO object detector trained on COCO dataset (80 classes)
         print("[INFO] loading YOLO from disk...")
